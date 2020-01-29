@@ -1,0 +1,31 @@
+inputs:
+  http:
+    disabled: false
+    host: 0.0.0.0
+    elasticAPI: /elastic
+    criblAPI: /cribl
+    splunkHecAPI: /services/collector
+    splunkHecAcks: false
+    tls:
+      disabled: true
+    type: http
+    port: 10080
+    authTokens:
+      - myToken42
+  testGen:
+    disabled: true
+    samples:
+      - eventsPerSec: 4
+        sample: apache_common
+      - eventsPerSec: 4
+        sample: syslog
+    type: datagen
+  tcpcjsonIn9090:
+    disabled: false
+    host: 0.0.0.0
+    tls:
+      disabled: true
+    ipWhitelistRegex: /.*/
+    authToken: ""
+    type: tcpjson
+    port: 10090

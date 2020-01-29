@@ -1,0 +1,17 @@
+api:
+  retryCount: 120
+  retrySleepSecs: 5
+  baseUrl: ""
+  disabled: false
+  ssl:
+    disabled: true
+  host: 0.0.0.0
+  port: 9000
+workers:
+  count: 3
+  memory: 2048
+git:
+  remote: git@github.com:dritanbitincka/newrepo44.git
+tls:
+  defaultEcdhCurve: auto
+  rejectUnauthorized: true

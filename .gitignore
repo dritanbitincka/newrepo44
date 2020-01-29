@@ -11,6 +11,4 @@ pid/**
 data/uploads/**
 diag/**
 **/state/**
-**/certs/**
-**/ssh/**
 ### CUSTOM SECTION -- DO NOT REMOVE ###

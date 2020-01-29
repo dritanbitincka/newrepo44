@@ -1,0 +1,15 @@
+outputs:
+  default:
+    defaultId: tcpjsonout
+    type: default
+  tcpjsonout:
+    compression: none
+    throttleRatePerSec: "0"
+    tls:
+      disabled: true
+    connectionTimeout: 5000
+    writeTimeout: 10000
+    onBackpressure: block
+    type: tcpjson
+    host: 0.0.0.0
+    port: 9090
